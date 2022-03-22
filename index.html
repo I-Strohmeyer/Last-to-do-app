@@ -12,11 +12,33 @@
     <title>To-Do App</title>
   </head>
   <body>
-    <h1>Hello World</h1>
+    <div class="container">
+      <h2>To Do List App</h2>
+      <p>
+        <em>
+          Double click to mark an item off, click on "X" to delete an item, and
+          drag items to reorder.</em
+        >
+      </p>
+
+      <form name="toDoList">
+        <input type="text" name="ListItem" id="input" />
+      </form>
+
+      <div onclick="newItem()" id="button">Add</div>
+      <br />
+      <ol id="list"></ol>
+    </div>
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"
+      integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
